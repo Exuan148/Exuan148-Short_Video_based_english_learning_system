@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <title>test dropdown</title>
+    <style>
+        body, div, p, ul ,li {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: 微软雅黑;
+            line-height: 1.8rem;
+        }
+        #drop-down {
+            width: 100px;
+        }
+        #drop-down>p {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        #drop-down>ul {
+            display: none;
+            background-color: lightblue;
+            color: white;
+            list-style-type: none;
+            text-align: center;
+            box-shadow: 5px 5px 5px #6e6e6e;
+        }
+        #drop-down:hover ul {
+            display: block;
+        }
+    </style>
+</head>
+<body background="../images/add_images/background.jpg">
+<div id="drop-down">
+    <p>一级菜单</p>
+    <ul>
+        <li>二级菜单</li>
+        <li>二级菜单</li>
+    </ul>
+</div>
+</body>
+</html>

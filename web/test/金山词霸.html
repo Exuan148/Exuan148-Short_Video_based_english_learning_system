@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="word_main">
+    <div class="word_main_thead">
+        <div class="word_main_list_w">
+            <a href="#" onclick="checkall($(this));clickCount_bdc_web(24)" id="checkall" class="word_list_lable2"></a>单词
+            <span class="site_icon_s" id="s_h_im" onclick="hideall($(this))" title="点击隐藏单词"></span>
+        </div>
+
+        <div class="word_main_list_y">
+            音标连读
+            <span class="site_icon_y" onclick="set_auto_read($(this));clickCount_bdc_web(25)" title="点击开启音标连读"></span>
+        </div>
+        <!--<div class="word_main_list_y">音标连读<span class="site_icon_y current"></span></div>-->
+        <div class="word_main_list_s">
+            <span class="word_main_list_tip">不勾选的单词将不加入学习和测试中</span>释义<span class="site_icon_s" onclick="hidecomm($(this));clickCount_bdc_web(26)" title="点击隐藏单词释义"></span>
+        </div>
+    </div>
+    <ul class="word_main_list" p_id="1" id="word_list_1">
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="comment">
+													comment
+												</span>
+                <input type="hidden" name="words_checked[]" value="0">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈkɔment]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/f4/ca/f4ca8f1ef7bd221775ba33cef5db6fb7.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 评论，意见；体现，写照" style="display:block;">
+												n. 评论，意见；体现，写照
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="plate">
+													plate
+												</span>
+                <input type="hidden" name="words_checked[]" value="1">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [pleit]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/5a/21/5a21852c383fc3c36cfba1f4e9f23dd3.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="vt. 电镀  n. 盘子，盆子； 金属板；" style="display:block;">
+												vt. 电镀  n. 盘子，盆子； 金属...
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="salary">
+													salary
+												</span>
+                <input type="hidden" name="words_checked[]" value="2">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈsæləri]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/79/fd/79fd8a33f68d567659ba445b515721dc.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 薪金，薪水" style="display:block;">
+												n. 薪金，薪水
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="incorrect">
+													incorrect
+												</span>
+                <input type="hidden" name="words_checked[]" value="3">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˌɪnkəˈrekt]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/ef/a8/efa8aacda1a123c192cdc412cb707531.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="adj. 不正确的，错误的" style="display:block;">
+												adj. 不正确的，错误的
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="act">
+													act
+												</span>
+                <input type="hidden" name="words_checked[]" value="4">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ækt]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/ee/1c/ee1cc712ecc5f6d46ee8fa50e91abccc.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 行为；法令  vt.&amp; vi.行动；表演；起作用；" style="display:block;">
+												n. 行为；法令  vt.&amp; vi.行动...
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="cliff">
+													cliff
+												</span>
+                <input type="hidden" name="words_checked[]" value="5">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [klif]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/f3/76/f376bf2af1ee0e5d195a4b2cd6215b9c.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 悬崖，峭壁" style="display:block;">
+												n. 悬崖，峭壁
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="credit">
+													credit
+												</span>
+                <input type="hidden" name="words_checked[]" value="6">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈkredit]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/c8/4f/c84f80f61bba42e35af73b17ef1c5ad2.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 赊购；结余；贷记；赞扬，称赞" style="display:block;">
+												n. 赊购；结余；贷记；赞扬，称赞
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="northwest">
+													northwest
+												</span>
+                <input type="hidden" name="words_checked[]" value="7">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [nɔ:θˈwest]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/0/0/94/fe/94feb82d98f9d264c82379aaf3195793.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="adj. 位于西北的" style="display:block;">
+												adj. 位于西北的
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="partial">
+													partial
+												</span>
+                <input type="hidden" name="words_checked[]" value="8">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈpɑ:ʃəl]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/0/0/0e/87/0e87c1212a698494dcdb198af3e0eb2f.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="adj. 部分的；偏爱的；偏袒的" style="display:block;">
+												adj. 部分的；偏爱的；偏袒的
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="direct">
+													direct
+												</span>
+                <input type="hidden" name="words_checked[]" value="9">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [diˈrekt]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/a2/52/a252fa21107929835b590172a7d57cda.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="adj. 直接的；直达的；直接照射的；坦率的" style="display:block;">
+												adj. 直接的；直达的；直接照射的；坦...
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+    </ul>
+    <ul class="word_main_list" p_id="2" id="word_list_2" style="display:none;">
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="simple">
+													simple
+												</span>
+                <input type="hidden" name="words_checked[]" value="10">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈsimpl]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/c5/22/c522a279b6e63507f49996e0bad1122c.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="adj. 简单的；朴素的" style="display:block;">
+												adj. 简单的；朴素的
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="vice">
+													vice
+												</span>
+                <input type="hidden" name="words_checked[]" value="11">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [vais]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/9f/32/9f32c39aa9a081f5d6b8655685e64be1.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 恶习； 不道德行为； （肉体的）缺陷，疾病； （文体等的）缺点，瑕疵  prep. 代替； 取代  adj. 副的； 代替的    vt. 用老虎钳夹紧； 钳制" style="display:block;">
+												n. 恶习； 不道德行为； （肉体的）缺...
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="horizon">
+													horizon
+												</span>
+                <input type="hidden" name="words_checked[]" value="12">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [həˈraɪzn]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/0/0/40/7e/407e3b6b8b88aaf095f15efeb865efd6.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 地平线；眼界，见识" style="display:block;">
+												n. 地平线；眼界，见识
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="cut">
+													cut
+												</span>
+                <input type="hidden" name="words_checked[]" value="13">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [kʌt]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/d7/c0/d7c0229758f1556bc68cbc61a19a2554.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="vt. 切，割，剪；割伤；修剪" style="display:block;">
+												vt. 切，割，剪；割伤；修剪
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="drum">
+													drum
+												</span>
+                <input type="hidden" name="words_checked[]" value="14">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [drʌm]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/8d/08/8d08f1f0267c88dd13abd43a7920aa99.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 鼓；鼓状物，圆桶；卷筒" style="display:block;">
+												n. 鼓；鼓状物，圆桶；卷筒
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="thermometer">
+													thermometer
+												</span>
+                <input type="hidden" name="words_checked[]" value="15">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [θəˈmɔmitə]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/29/61/296174fe444a5990df8dd9b303cbe6bd.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 温度计，体温表" style="display:block;">
+												n. 温度计，体温表
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="pail">
+													pail
+												</span>
+                <input type="hidden" name="words_checked[]" value="16">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [peɪl]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/62/54/62543f942ebf0628e63c7ffe4d715d38.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 桶，提桶" style="display:block;">
+												n. 桶，提桶
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="cinema">
+													cinema
+												</span>
+                <input type="hidden" name="words_checked[]" value="17">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈsinəmə]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/e8/f8/e8f813636449b06f37740d246f848710.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 电影院；电影；电影业" style="display:block;">
+												n. 电影院；电影；电影业
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="seventy">
+													seventy
+												</span>
+                <input type="hidden" name="words_checked[]" value="18">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [ˈsevənti:]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/9b/77/9b777276533bc98c69428ce0e819dd70.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="num. 七十，七十个" style="display:block;">
+												num. 七十，七十个
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+        <li>
+            <div class="word_main_list_w">
+                <a href="###" title="不勾选的单词将不加入学习和测试" onclick="check($(this))" class="word_list_lable2"></a>
+                <span title="sea">
+													sea
+												</span>
+                <input type="hidden" name="words_checked[]" value="19">
+                <a href="###" onclick="showword($(this))" class="word_list_xs" title="显示单词" style="display:none;"></a>
+            </div>
+            <div class="word_main_list_y">
+
+                <strong lang="EN-US" xml:lang="EN-US">
+                    [si:]
+
+                </strong>
+
+                <a title="发音" href="javascript:void(0)" id="http://res.iciba.com/resource/amp3/oxford/0/6e/49/6e495585e4ed0bbf6758038c05faa318.mp3" onmouseover="asplay_top(this.id);" class="icon_s"></a>
+            </div>
+            <div class="word_main_list_s">
+
+						<span title="n. 海，海洋" style="display:block;">
+												n. 海，海洋
+												</span>
+                <a href="###" class="word_list_sy" onclick="showword($(this))" title="显示释义" style="display:none;"></a>
+            </div>
+        </li>
+    </ul>
+
+    <div class="word_list_page_num">
+        <span class="word_list_page_num_hover">1</span>
+        <span style="cursor: pointer;">2</span>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>视频</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./css/add_css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="./css/add_css/视频.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./js/视频.js"></script>
+    <!--<script type="text/javascript" src="js/move-top.js"></script>-->
+    <!--<script type="text/javascript" src="js/easing.js"></script>-->
+    <!--<script type="text/javascript" src="js/checkInfo.js"></script>-->
+
+</head>
+<body>
+
+
+
+<div class="header" >
+    <div class="headertop_desc">
+        <div class="wrap">
+            <div class="nav_list">
+                <ul style="display:inline">
+                    <li style="display:inline-block"><a class="notlog" href="登录.html"><p style="font:14px 新宋体;">登录</p></a></li>
+                    <li style="display:inline-block"><a class="notlog" href="注册.html"><p style="font:14px 新宋体;">注册</p></a></li>
+                    <li style="display:inline-block"><a class="logstatus" href="#"></a></li>
+                    <li style="display:inline-block"><a class="quit" href="#"><p style="font:14px 新宋体;">退出登录</p></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+
+<div class="myvideo">
+    <video id="video1" onplay="highlight()" poster="images/add_images/videonotload.gif" width="800px" height="600px" oncanplaythrough="this.poster=''"  src=''>
+    </video>
+    <div id="mydiv2">
+        <span style="font:14px 新宋体;"><img src="./images/add_images/show.png" id="myimagEn" alt="error" onclick="hideEn()"> 隐藏/显示原文</span>
+        <span style="font:14px 新宋体; margin-left: 5px"><img src="./images/add_images/show.png" id="myimagCn" alt="error" onclick="hideCn()"> 隐藏/显示译文</span>
+        <span style="font:14px 新宋体; margin-left: 5px">  快捷键: "shift"重播</span>
+        <!--<span style="font:14px 新宋体; margin-left: 5px">  学习单词</span>-->
+        <div id="drop-down" >
+            <p>单词学习</p>
+            <ul>
+                <li onclick="wordtest('wordtest')" onmouseover="this.style.background='#13227A' " onmouseout="this.style.background='lightblue'" >四级词汇</li>
+                <li onclick="wordtest('wordtest_cet6')" onmouseover="this.style.background='#13227A' " onmouseout="this.style.background='lightblue'" >六级词汇</li>
+                <li onclick="wordtest('wordtest_toefl')" onmouseover="this.style.background='#13227A' " onmouseout="this.style.background='lightblue'" >托福词汇</li>
+                <li onclick="wordtest('wordtest_kaoyan')" onmouseover="this.style.background='#13227A' " onmouseout="this.style.background='lightblue'" >考研词汇</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mydiv1">
+        <ul class="textlist">
+            <!--<li class="clearfix2" onclick="playMedia(1,5)" data-begintime="96.916" data-endtime="100.786">-->
+                <!--<div class="nt">-->
+                    <!--<i>1:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">When I was young, I thought,-->
+                        <!--house painters painted houses.</p>-->
+                    <!--<p class="cn">我小时候以为油漆工人,-->
+                        <!--就是给房子刷油漆的</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(102.375,null)" data-begintime="102.375" data-endtime="103.625">-->
+                <!--<div class="nt">-->
+                    <!--<i>2:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">What did I know?</p>-->
+                    <!--<p class="cn">我当时懂什么呢？</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(104.458,null)" data-begintime="104.458" data-endtime="106.378">-->
+                <!--<div class="nt">-->
+                    <!--<i>3:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">I was a working guy.</p>-->
+                    <!--<p class="cn">我以前是个工人</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(106.916,null)" data-begintime="106.916" data-endtime="111.786">-->
+                <!--<div class="nt">-->
+                    <!--<i>5:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">A business agent for Teamster Local 107,-->
+                        <!--out of South Philly.</p>-->
+                    <!--<p class="cn">南费城外卡车司机国际兄弟会,-->
+                        <!--本地107工会的工会代表</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(111.875,null)" data-begintime="111.875" data-endtime="114.375">-->
+                <!--<div class="nt">-->
+                    <!--<i>6:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">One of a thousand working stiffs...</p>-->
+                    <!--<p class="cn">上千名工人中的一名…</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(117,null)" data-begintime="117" data-endtime="118.750">-->
+                <!--<div class="nt">-->
+                    <!--<i>7:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">until I wasn't no more.</p>-->
+                    <!--<p class="cn">后来我不再是工人了</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(30,null)" data-begintime="30" data-endtime="35">-->
+                <!--<div class="nt">-->
+                    <!--<i>8:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">the 30th to the 35th second</p>-->
+                    <!--<p class="cn">第30秒到第35秒</p>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="clearfix2" onclick="playMedia(35,null)" data-begintime="35" data-endtime="40">-->
+                <!--<div class="nt">-->
+                    <!--<i>9:</i>-->
+                    <!--<img src="./images/add_images/nobk.gif" alt="error!" class="note">-->
+                <!--</div>-->
+                <!--<div class="textbox">-->
+                    <!--<p class="en">the 35th to the 40th secondthe 30th to the 35th secondthe 30th to the 35th secondthe 30th to the 35th secondthe 30th to the 35th secondthe 30th to the 35th second</p>-->
+                    <!--<p class="cn">第35秒到第40秒第30秒到第35秒第30秒到第35秒第30秒到第35秒第30秒到第35秒第30秒到第35秒</p>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <div id="searchResult">
+            <!--<p class="searchword"></p>-->
+            <!--<p class="phonogram"></p>-->
+            <!--<p class="translate">抱歉，找不到翻译</p>-->
+            <div id="searchResultButton" ><img src="./images/add_images/关闭.png" alt="error"></div>
+            <div id="searchword" ></div>
+            <div id="A_phonogram" ></div>
+            <div id="E_phonogram" ></div>
+            <div id="translate" ></div>
+
+        </div>
+    </div>
+    <div id="box">
+        <!-- 进度条整体 -->
+        <div id="progress">
+            <!-- 进度条长度 -->
+            <div id="progress_head"></div>
+            <!-- 进度条移动条 -->
+            <span id="span"></span>
+            <div>
+                <!-- 显示数据 -->
+                <div id="percentage">00:00/00:00</div>
+            </div>
+        </div>
+        <div id="pause-play" title="开始/暂停">
+            <img src="./images/add_images/开始.png"  alt="error" id="mypause-play" onclick="mypauseplay()">
+        </div>
+    </div>
+    <div id="volume" title="音量">
+        <img src="./images/add_images/音量2.png" alt="error" onclick="volumeboxshow()">
+    </div>
+    <div id="volumebox">
+        <div id="volumeprogress">
+            <div id="volumeprogress_head"></div>
+            <span id="volumespan"></span>
+        </div>
+    </div>
+    <div  style="margin-left: 610px;margin-top: -40px;cursor:pointer;" title="收藏/取消">
+        <img id="favorite" src="./images/add_images/未收藏.png" alt="error" onclick="addfavorite()">
+    </div>
+</div>
+    <!--text-align水平居中  line-height为标签height上下居中-->
+    <!--如何实现子标签已知处于父标签的底部：father的position为relative son的position为absolute bottom：0-->
+    <div id="mytest">
+        <!--<div style=" height: 30px; background-color: yellow; position:relative"><img style="position: absolute; bottom:0 ;left: 0;" src="./images/add_images/关闭.png" alt="error" onclick="wordteststop()"></div>-->
+        <!--<div style="width: 100%; height: 50px; background-color: #0092e9"><span style="font:28px 新宋体; line-height: 50px">四级词汇</span></div>-->
+        <!--<div style="padding:5px 20px 0 5px; height: 45px; background-color: antiquewhite; display: block;" id="wordtest_ul_head">-->
+            <!--<div style="width: 100% ;height: 35px; background-color: #0bc4a8 ">-->
+                <!--<div style="margin-left: 27px;width:155px; height: 31px; background-color: #9fbaa8"><p style="font:20px 新宋体; line-height: 31px">词汇</p>-->
+                    <!--<img id="wordtest_icon_word" src="./images/add_images/hide_mouseout.png" onclick="wordtest_hide('word')"  alt="error" style="position: absolute; margin: -25px 0 0 45px;"></div>-->
+                <!--<div style="  width:180px; height:31px; margin-left: 182px;margin-top: -31px; background-color: #2A5C86"><p style="font:20px 新宋体; line-height: 31px">音标</p></div>-->
+                <!--<div style="  width:329px; height:31px; margin: -31px 0 0 362px; background-color: #3d7be3"><p style="font:20px 新宋体; line-height: 31px">释义</p>-->
+                    <!--<img id="wordtest_icon_translation" src="./images/add_images/hide_mouseout.png" onclick="wordtest_hide('translation')"  alt="error" style="position: absolute; margin: -25px 0 0 45px;"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<ul style="height:365px; overflow-y:scroll; padding:10px 20px 5px ; display: block;" id="wordtest_ul">-->
+        <!--</ul>-->
+        <!--星级-->
+        <!--<div id="wordtest_dictation" style="background-color: lightgrey; margin: 40px 0 0 45px; border-radius:50px; border: black 2px solid; display:block ;width:650px ; height:350px">-->
+            <!--<div style="position: relative;margin-top:90px;height: 80px;"><img id="wordtest_dictation_stars" style="position: absolute; margin-top:20px;margin-left: 140px;" src="./images/add_images/星级0.png" alt=""></div>-->
+            <!--<div style="position: relative;margin-top:40px;height: 40px;"><p style="position:absolute; left: 220px;font:20px 新宋体; line-height: 40px">答对10题，正确率30%</p></div>-->
+            <!--<div style="position: relative;margin-top:0 ;height: 40px;"><p style="position:absolute; left: 220px;color: blue;font:15px 新宋体; line-height: 40px">点击左下角返回单词列表</p></div>-->
+        <!--</div>-->
+
+        <!--<div style="width: 100%; height: 45px; background-color: red ;position: absolute; bottom: 0;">-->
+            <!--<div id="drop-up" >-->
+                <!--<button class="wordtest_btn" onclick="wordtest_btn()" style="width: 100px;height: 40px;position:absolute;bottom: 0"><p style="font:20px 新宋体;">开始测试</p></button>-->
+                <!--<div class="drop-up-div" onclick="wordtest_dictate()" style="display: none ;bottom: 40px;"><p style="font:20px 新宋体; line-height: 25px;text-align: center">听写电台</p></div>-->
+                <!--<div class="drop-up-div" onclick="wordtest_recall()" style="display: none;bottom: 65px;"><p style="font:20px 新宋体; line-height: 25px;text-align: center">英文回想</p></div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+    <div id="newbackground">
+
+    </div>
+    <script>
+        //字幕相关
+        var myVid=document.getElementById("video1");
+        var elementplaypause=document.getElementById("mypause-play");//获取图标元素
+        // var elementplaypause=$(".mypause-play");//获取图标元素
+        myVid.addEventListener("timeupdate",timeupdate);
+        myVid.addEventListener("timeupdate",highlight);
+        myVid.addEventListener("timeupdate",playorpause);
+        myVid.volume=0.3;//设置默认的音量
+        var myvidscroll=document.getElementById("mydiv1");//获取myvid1，之后在函数里使用
+        var _endTime;
+        function playorpause(){
+            if(elementplaypause.src.match("开始")){
+                myVid.pause();
+            }
+            else myVid.play();
+        }
+        //视频播放
+        function playMedia(startTime,endTime){
+            //设置结束时间
+            _endTime = endTime;
+            myVid.currentTime=startTime;
+            myVid.play();
+            elementplaypause.src="./images/add_images/暂停.png";
+        }
+
+        function timeupdate(){
+            //因为当前的格式是带毫秒的float类型的如：12.231233，所以把他转成String了便于后面分割取秒
+            var time = myVid.currentTime+"";
+            var ts = time.substring(0,time.indexOf("."));//12.2535384转化为12
+            if(ts==_endTime){
+                myVid.pause();
+                elementplaypause.src="./images/add_images/开始.png";
+            }
+
+        }
+        function highlight(){
+            // console.log(myVid.currentTime);
+            $("li").each(function(){
+                var beginTime =  $(this).attr("data-begintime");
+                var endTime = $(this).attr("data-endtime");
+                beginTime=Number(beginTime);
+                endTime=Number(endTime);
+                if(myVid.currentTime>=beginTime && myVid.currentTime<endTime){
+                    $(this).siblings().children("div").children("p").removeClass("fontStyle");
+                    $(this).children("div").children("p").addClass("fontStyle");
+                    $(this).children("div").children("img").css("display","block");
+                    $(this).siblings().children("div").children("img").css("display","none");
+                    $(this).children("div").children("i").css("display","none");
+                    $(this).siblings().children("div").children("i").css("display","block");
+                    if ($(this).offset().top>460){
+                        myvidscroll.scrollTop+=$(this).offset().top-377;
+                    }
+                    console.log($(this).offset().top);
+                }
+            });
+            progress(myVid.currentTime/myVid.duration);//进度条
+            //显示时间进度
+            oPercentage.innerHTML=timeFormat(myVid.currentTime)+"/"+timeFormat(myVid.duration);
+        }
+        document.onkeydown = function(event){
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            // var currKey=e.keyCode||e.which||e.charCode;
+            if (e.shiftKey) {
+                $("li").each(function(){
+                    var beginTime=$(this).attr("data-begintime");
+                    var endTime = $(this).attr("data-endtime");
+                    beginTime=Number(beginTime);
+                    endTime=Number(endTime);
+                    if(myVid.currentTime>=beginTime && myVid.currentTime<endTime){
+                        playMedia(beginTime,null)
+                    }
+                });
+            }
+            else if(e.keyCode==32){
+                if(myVid.paused){
+                    console.log("key开始");
+                    elementplaypause.src="./images/add_images/暂停.png";
+                    myVid.play();
+                }
+                else {
+                    console.log("key暂停");
+                    elementplaypause.src="./images/add_images/开始.png";
+                    myVid.pause();
+                }
+            }
+        };
+        function hideEn(){
+            var element=document.getElementById("myimagEn");
+            if(element.src.match("show")){   //此处不能直接判断图片的地址，因为不是本地地址
+                element.src="./images/add_images/hide.png";
+                $(".en").each(function () {
+                    $(this).css("display","none");
+                });
+            }
+            else{
+                element.src="./images/add_images/show.png";
+                $(".en").each(function () {
+                    $(this).css("display","block");
+                });
+            }
+        }
+        function hideCn(){
+            var element=document.getElementById("myimagCn");
+            if(element.src.match("show")){   //此处不能直接判断图片的地址，因为不是本地地址
+                element.src="./images/add_images/hide.png";
+                $(".cn").each(function () {
+                    $(this).css("display","none");
+                    $(this).css("margin-top","0");
+                });
+            }
+            else{
+                element.src="./images/add_images/show.png";
+                $(".cn").each(function () {
+                    $(this).css("display","block");
+                    $(this).css("margin-top","10px");
+                });
+            }
+        }
+        //    控制暂停，播放
+        function mypauseplay(){
+            if(elementplaypause.src.match("开始")){
+                console.log("click开始");
+                elementplaypause.src="./images/add_images/暂停.png";
+                myVid.play();
+            }
+            else{
+                console.log("click暂停");
+                elementplaypause.src="./images/add_images/开始.png";
+                myVid.pause();
+            }
+        }
+        //显示音量调节框
+        function volumeboxshow(){
+            var ovolumebox=document.getElementById("volumebox");
+            if(ovolumebox.style.display=="none"){ovolumebox.style.display="block";}
+            else {ovolumebox.style.display="none";}
+        }
+        // 以下是进度条相关
+
+        //js获取节点
+        var oProgress=document.getElementById('progress');//yellow
+        var oProgress_head=document.getElementById('progress_head');//red
+        var oSpan=document.getElementById('span');//purple
+        var oPercentage=document.getElementById('percentage');
+        //添加事件  鼠标按下的事件
+        var spanisonmouse=false;
+
+        oSpan.onmousedown=function(event){
+            spanisonmouse=true;
+            var event=event || window.event;
+            var x=event.clientX-oSpan.offsetLeft;
+            document.onmousemove=function(){//当鼠标在指定元素中移动时
+                var event=event || window.event;
+                var wX=event.clientX-x;
+                if(wX<0)
+                {
+                    wX=0;
+                }else if(wX>=oProgress.offsetWidth-10)
+                {
+                    wX=oProgress.offsetWidth - 10;//20指的是span的长度
+                }
+                oProgress_head.style.width=wX+'px';
+                oSpan.style.left=wX+'px';
+                var percentage=wX/(oProgress.offsetWidth-10);
+                //显示时间进度
+                oPercentage.innerHTML=timeFormat(myVid.currentTime)+"/"+timeFormat(myVid.duration);
+                //通过进度条改变播放进度
+                playMedia(myVid.duration*percentage,null);
+                return false;
+            };
+
+            document.onmouseup=function(){
+                console.log("松开了");
+                document.onmousemove=null;
+            };
+
+        };
+        function progress(percentage){
+            //输入百分比，输出进度条
+            let wx=percentage*(oProgress.offsetWidth-10);
+            oProgress_head.style.width=wx+'px';
+            oSpan.style.left=wx+'px';
+        }
+        function timeFormat(number) {
+            //将时间转化为ss:mm的形式
+            var minute = parseInt(number / 60);
+            var second = parseInt(number % 60);
+            minute = minute >= 10 ? minute : "0" + minute;
+            second = second >= 10 ? second : "0" + second;
+            return minute + ":" + second;
+        }
+        oProgress.onclick=function (event) {
+            // oProgress.onmouseup=function(){
+            if(spanisonmouse){
+                spanisonmouse=false;
+                return;
+            }
+            else {
+                var event = event || window.event;
+                var wX = event.offsetX;
+                if (wX < 0) {
+                    wX = 0;
+                } else if (wX >= oProgress.offsetWidth - 10) {
+                    wX = oProgress.offsetWidth - 10;//20指的是span的长度
+                }
+                oProgress_head.style.width = wX + 'px';
+                oSpan.style.left = wX + 'px';
+
+                oPercentage.innerHTML = parseInt(wX / (oProgress.offsetWidth - 10) * 100) + '%';
+                document.onmousemove = null;
+                //控制视频播放进度
+                playMedia(myVid.duration*wX/(oProgress.offsetWidth-10),null);
+                //显示时间进度
+                oPercentage.innerHTML=timeFormat(myVid.currentTime)+"/"+timeFormat(myVid.duration);
+                return false;
+                // };
+            }
+        };
+        //这是音量的进度条
+        //js获取节点
+        var ovolumeProgress=document.getElementById('volumeprogress');//yellow
+        var ovolumeProgress_head=document.getElementById('volumeprogress_head');//red
+        var ovolumeSpan=document.getElementById('volumespan');//purple
+        var volumespanisonmouse=false;
+        ovolumeSpan.onmousedown=function(event){
+            volumespanisonmouse=true;
+            var event=event || window.event;
+            var x=event.clientX-ovolumeSpan.offsetLeft;
+            document.onmousemove=function(){//当鼠标在指定元素中移动时
+                var event=event || window.event;
+                var wX=event.clientX-x;
+                if(wX<0)
+                {
+                    wX=0;
+                }else if(wX>=ovolumeProgress.offsetWidth-10)
+                {
+                    wX=ovolumeProgress.offsetWidth - 10;//20指的是span的长度
+                }
+                ovolumeProgress_head.style.width=wX+'px';
+                ovolumeSpan.style.left=wX+'px';
+                // //通过进度条改变播放进度
+                myVid.volume=wX / (ovolumeProgress.offsetWidth - 10);
+                return false;
+            };
+            document.onmouseup=function(){
+                document.onmousemove=null;
+            };
+        };
+        ovolumeProgress.onclick=function (event) {
+            if(volumespanisonmouse){
+                volumespanisonmouse=false;
+                return;
+            }
+            else {
+                var event = event || window.event;
+                var wX = event.offsetX;
+                if (wX < 0) {
+                    wX = 0;
+                } else if (wX >= ovolumeProgress.offsetWidth - 10) {
+                    wX = ovolumeProgress.offsetWidth - 10;//20指的是span的长度
+                }
+                ovolumeProgress_head.style.width = wX + 'px';
+                ovolumeSpan.style.left = wX + 'px';
+                myVid.volume=wX / (ovolumeProgress.offsetWidth - 10);
+                document.onmousemove = null;
+                //控制视频播放进度
+                return false;
+            }
+        };
+
+    </script>
+</body>
+
+</html>

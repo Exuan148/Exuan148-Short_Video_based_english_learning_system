@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>权限管理系统</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="./css/登录Bootstrap3.3.4.css">
+	<link rel="stylesheet" href="./css/登录font-awesome4.4.0.css">
+	<link rel="stylesheet" href="./css/登录ionicons2.0.1.css">
+	<script type="text/javascript" src="./js/注册.js"></script>
+	<!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--&lt;!&ndash;[if lt IE 9]>-->
+	<!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+	<!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<!--<![endif]&ndash;&gt;-->
+	<!--<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>-->
+	<!--<script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+	<!--<script src="${pageContext.request.contextPath}/resources/particleground/jquery.particleground.min.js"></script>-->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Custom Theme files -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--webfont-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script src="js/jquery.easydropdown.js"></script>
+	<!--Animation-->
+	<script src="js/wow.min.js"></script>
+	<link href="css/animate.css" rel='stylesheet' type='text/css' />
+	<script>
+		new WOW().init();
+	</script>
+</head>
+
+<body class="hold-transition login-page">
+
+<div class="container">
+	<div class="row">
+		<!--<div style="background-color: yellow ;width : 300px;height : 300px"></div>-->
+		<div class="header-left">
+			<div class="logo">
+				<a href="主页.html"><img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="menu">
+				<a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+				<ul class="nav" id="nav">
+					<!--<li class="active"><a href="主页.html">Reality</a></li>-->
+					<!--<li><a href="living.html">Living</a></li>-->
+					<!--<li><a href="注册.html">Education</a></li>-->
+					<li><a href="登录.html"><p style="font:14px 新宋体; font-weight: bold; ">登录</p></a></li>
+					<li><a href="注册.html"><p style="font:14px 新宋体; font-weight: bold; ">注册</p></a></li>
+					<div class="clearfix"></div>
+				</ul>
+				<script type="text/javascript" src="js/responsive-nav.js"></script>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 col-md-offset-4" style="margin: 220px 380px">
+			<div class="login-panel panel panel-default" >
+				<div class="panel-heading">
+					<h3 class="panel-title" style="text-align: center;">登录</h3>
+				</div>
+				<div class="panel-body">
+					<form role="form" action="#" method="post" name='regist' id="regist">
+						<fieldset>
+							<div class="form-group">
+								<input class="form-control" placeholder="用户名" name="uname" autofocus>
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="密码" name="password" type="password" value="">
+							</div>
+							<!-- Change this to a button or input when using this as a form -->
+							<!--<a href="javascript:void(0)" onclick="getaccessed()" class="btn btn-lg btn-success btn-block" id='submitBtn'>Login</a>-->
+							<input type="button" name="submit" value="注册" class="btn btn-lg btn-success btn-block" onclick="getFormInfo();">
+						</fieldset>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

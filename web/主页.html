@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>主页</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+ <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<!--Animation-->
+<script src="js/wow.min.js"></script>
+	<script type="text/javascript" src="./js/主页.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+<script>
+	new WOW().init();
+</script>
+	<style>
+
+		.quit{
+			display: none;
+			/*position: relative;*/
+			/*margin-left: 20px;*/
+		}
+		.logstatus{
+			display:none;
+		}
+		.notlog{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+		   <div class="header-left">
+					 <div class="logo">
+						<a href="主页.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li ><a class="notlog" href="登录.html"><p style="font:14px 新宋体; font-weight: bold; ">登录</p></a></li>
+						    	<li ><a class="notlog" href="注册.html"><p style="font:14px 新宋体; font-weight: bold;">注册</p></a></li>
+						    	<li ><a class="logstatus" href="#"></a></li>
+								<li ><a href="#"><p  class="quit" style="font:14px 新宋体; font-weight: bold;">退出登录</p></a></li>
+								<div class="clearfix"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clearfix"></div>
+		   </div>
+	            <!--<div class="header_right">-->
+	    		  <!--&lt;!&ndash; start search&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="search-box">&ndash;&gt;-->
+							<!--&lt;!&ndash;<div id="sb-search" class="sb-search">&ndash;&gt;-->
+								<!--&lt;!&ndash;<form>&ndash;&gt;-->
+									<!--&lt;!&ndash;<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">&ndash;&gt;-->
+									<!--&lt;!&ndash;<input class="sb-search-submit" type="submit" value="">&ndash;&gt;-->
+									<!--&lt;!&ndash;<span class="sb-icon-search"> </span>&ndash;&gt;-->
+								<!--&lt;!&ndash;</form>&ndash;&gt;-->
+							<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--&lt;!&ndash;</div>&ndash;&gt;-->
+						<!--&lt;!&ndash;&#45;&#45;search-scripts&#45;&#45;&ndash;&gt;-->
+						<!--<script src="js/classie.js"></script>-->
+						<!--<script src="js/uisearch.js"></script>-->
+						<!--<script>-->
+							<!--new UISearch( document.getElementById( 'sb-search' ) );-->
+						<!--</script>-->
+						<!--&lt;!&ndash;&#45;&#45;//search-scripts&#45;&#45;&ndash;&gt;-->
+				       <!--&lt;!&ndash;<div id="loginContainer"><a href="#" id="loginButton"><img src="images/login.png"><span>登录</span></a>&ndash;&gt;-->
+						    <!--&lt;!&ndash;<div id="loginBox">&ndash;&gt;-->
+						        <!--&lt;!&ndash;<form id="loginForm">&ndash;&gt;-->
+						                <!--&lt;!&ndash;<fieldset id="body">&ndash;&gt;-->
+						                	<!--&lt;!&ndash;<fieldset>&ndash;&gt;-->
+						                          <!--&lt;!&ndash;<label for="email">Email Address</label>&ndash;&gt;-->
+						                          <!--&lt;!&ndash;<input type="text" name="email" id="email">&ndash;&gt;-->
+						                    <!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+						                    <!--&lt;!&ndash;<fieldset>&ndash;&gt;-->
+						                            <!--&lt;!&ndash;<label for="password">Password</label>&ndash;&gt;-->
+						                            <!--&lt;!&ndash;<input type="password" name="password" id="password">&ndash;&gt;-->
+						                     <!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+						                    <!--&lt;!&ndash;<input type="submit" id="login" value="Sign in">&ndash;&gt;-->
+						                	<!--&lt;!&ndash;<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>&ndash;&gt;-->
+						            	<!--&lt;!&ndash;</fieldset>&ndash;&gt;-->
+						                 <!--&lt;!&ndash;<span><a href="#">Forgot your password?</a></span>&ndash;&gt;-->
+							      <!--&lt;!&ndash;</form>&ndash;&gt;-->
+				              <!--&lt;!&ndash;</div>&ndash;&gt;-->
+			             <!--&lt;!&ndash;</div>&ndash;&gt;-->
+		                 <!--<div class="clearfix"></div>-->
+	                 <!--</div>-->
+	                <div class="clearfix"></div>
+   </div>
+   <div class="banner wow fadeInUp" data-wow-delay="0.4s">
+   	  <div class="container_wrap">
+   		<h1><p style="font:20px 新宋体; font-weight: bold; ">分类</p></h1>
+   	       <div class="dropdown-buttons">   
+            		  <div  class="dropdown-button">
+            			<select id="queryfilm" class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+            			<option value="0">任意</option>
+						<option value="1">GreenBook</option>
+						<option value="2">Serenity</option>
+						<option value="3">FightClub</option>
+						<option value="4">Sully</option>
+						<option value="5">Forrest_Gump</option>
+						<option value="6">Her</option>
+						<option value="7">Scent_of_a_Woman</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+						<option value="8">Mirum</option>
+					  </select>
+					</div>
+				     <div class="dropdown-button">
+					  <select id="queryduration" class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+            			<option value="7">任意</option>
+            			<option value="0">0min+</option>
+						<option value="1">1min+</option>
+						<option value="2">2min+</option>
+						<option value="3">3min+</option>
+						<option value="4">4min+</option>
+						<option value="5">5min+</option>
+					  </select>
+					 </div>
+				   </div>  
+		    <form name="queryinput">
+				<input name="queryinput2" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+			    <div class="contact_btn">
+	               <label class="btn1 btn-2 btn-2g" onclick="searchvideo()">搜索</label>
+	            </div>
+			</form>        		
+   		    <div class="clearfix"></div>
+         </div>
+   </div>
+   <div class="content_top wow bounceInRight" data-wow-delay="0.4s">
+   	  <div class="container">
+   		<div class="col-md-4 bottom_nav">
+   		   <div class="content_menu">
+				<ul>
+					<li id="recommendtag" onclick="recommend()" class=""><a href="#"><p style="font:14px 新宋体; font-weight: bold; ">推荐学习</p></a></li>
+					<li id="favoritetag" onclick="favorite()" class="" ><a href="#"><p style="font:14px 新宋体; font-weight: bold; ">收藏夹</p></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--<div class="col-md-4 content_dropdown1">-->
+		   <!--<div class="content_dropdown">    -->
+		       <!--<select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>-->
+            			<!--<option value="0">Dubai</option>	-->
+						<!--<option value="1">tempor</option>-->
+						<!--<option value="2">congue</option>-->
+						<!--<option value="3">mazim </option>-->
+						<!--<option value="4">mutationem</option>-->
+						<!--<option value="5">hendrerit </option>-->
+						<!--<option value="5"></option>-->
+						<!--<option value="5"></option>-->
+		        <!--</select>-->
+		     <!--</div>-->
+		     <!--<div class="content_dropdown">    -->
+		       <!--<select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro"}'>-->
+            			<!--<option value="0">Show Map</option>	-->
+						<!--<option value="1">tempor</option>-->
+						<!--<option value="2">congue</option>-->
+						<!--<option value="3">mazim </option>-->
+						<!--<option value="4">mutationem</option>-->
+						<!--<option value="5">hendrerit </option>-->
+						<!--<option value="5"></option>-->
+						<!--<option value="5"></option>-->
+		        <!--</select>-->
+		       <!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-md-4 filter_grid">-->
+			<!--<ul class="filter">-->
+				<!--<li class="fil">Filter :</li>-->
+				<!--<li><a href=""> <i class="icon1"> </i> </a></li>-->
+				<!--<li><a href=""> <i class="icon2"> </i> </a></li>-->
+				<!--<li><a href=""> <i class="icon3"> </i> </a></li>-->
+				<!--<li><a href=""> <i class="icon4"> </i> </a></li>-->
+				<!--<li><a href=""> <i class="icon5"> </i> </a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
+   	</div>
+   </div>
+   <div class="content_middle wow bounceInLeft" data-wow-delay="0.4s">
+   	  <div class="container">
+   	    <div class="content_middle_box">
+			<div id="videolist" class="middle_grid wow fadeInUp" data-wow-delay="0.4s">
+				<!--<div vname="视频1" onclick="gotovideo('视频1')" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">1.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频2" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">2.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频3" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">1.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频4" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">2.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频5" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">1.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频6" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">2.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频7" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">1.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div vname="视频8" style="padding-top:2em;" class="col-md-3">-->
+					<!--<div class="grid1">-->
+						<!--<div class="view view-first">-->
+							<!--<div class="index_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></div>-->
+							<!--<div class="sale">2.5 min</div>-->
+							<!--<div class="mask">-->
+								<!--<div class="info"><i class="search"> </i>打开撒看到回复噶熟练度佛爱神的箭佛阿萨德开发商卡货到付款看到回复乐山大佛假设了的法律发送到发</div>-->
+								<!--<ul class="mask_img">-->
+									<!--&lt;!&ndash;<li class="star"><img src="images/star.png" alt=""/></li>&ndash;&gt;-->
+									<!--&lt;!&ndash;<li class="set"><img src="images/set.png" alt=""/></li>&ndash;&gt;-->
+									<!--<div class="clearfix"> </div>-->
+								<!--</ul>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<i class="home"></i>-->
+						<!--<div class="inner_wrap">-->
+							<!--<h3>标题1</h3>-->
+							<!--<ul class="star1">-->
+								<!--<h4 class="green">难度：</h4>-->
+								<!--<li><a href="#"> <img src="images/star1.png" alt="">(236)</a></li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="clearfix"> </div>-->
+			</div>
+   		  </div>
+		  <div class="offering">
+   		  	  <h2>What can AiEng offer to you ?</h2>
+   		  	  <h3></h3>
+   		  	  <ul class="icons wow fadeInUp" data-wow-delay="0.4s">
+   		  	  	 <li><i class="icon1"> </i><span class="one"> </span></li>
+   		  	  	 <li><i class="icon2"> </i><span class="two"> </span></li>
+   		  	  	 <li><i class="icon3"> </i><span class="three"> </span></li>
+   		  	  	 <li><i class="icon4"> </i><span class="four"> </span></li>
+   		  	  	 <li><i class="icon5"> </i></li>
+   		  	  </ul>
+   		  	  <div class="real">
+   		  	  	<h4>英语视频片段化学习</h4>
+   		  	  	<div class="col-sm-6">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s1"> </i>
+   	   				 <li class="desc1 wow fadeInRight" data-wow-delay="0.4s">
+   	   				   <p>视频</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+   	   			 <div class="col-sm-6">
+   		  	  	  <ul class="service_grid">
+   	   				<i class="s2"> </i>
+   	   				 <li class="desc1 wow fadeInRight" data-wow-delay="0.4s">
+   	   				   <p>字幕</p>
+   	   				 </li>
+   	   				 <div class="clearfix"> </div>
+   	   			   </ul>
+   	   			 </div>
+   	   			 <div class="clearfix"> </div>
+   	   			 </div>
+   		  	  </div>
+   		  </div>
+   	  </div>
+   <!--</div>-->
+   <!--<div class="footer">-->
+   	<!--<div class="container">-->
+   	 <!--<div class="footer_top">-->
+   	   <!--<h3>Subscribe to our newsletter</h3>-->
+   	   <!--<form>-->
+		<!--<span>-->
+			<!--<i><img src="images/mail.png" alt=""></i>-->
+		    <!--<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}">-->
+		    <!--<label class="btn1 btn2 btn-2 btn-2g"> <input name="submit" type="submit" id="submit" value="Subscribe"> </label>-->
+		    <!--<div class="clearfix"> </div>-->
+		<!--</span>-->
+	   <!--</form>-->
+	  <!--</div>-->
+	  <!--<div class="footer_grids">-->
+	     <!--<div class="footer-grid">-->
+			<!--<h4>Ipsum Quis</h4>-->
+			<!--<ul class="list1">-->
+				<!--<li><a href="contact.html">Contact</a></li>-->
+				<!--<li><a href="#">Mirum est</a></li>-->
+				<!--<li><a href="#">placerat facer</a></li>-->
+				<!--<li><a href="#">claritatem</a></li>-->
+				<!--<li><a href="#">sollemnes </a></li>-->
+			<!--</ul>-->
+		  <!--</div>-->
+		  <!--<div class="footer-grid">-->
+			<!--<h4>Quis Ipsum</h4>-->
+			<!--<ul class="list1">-->
+				<!--<li><a href="#">placerat facer</a></li>-->
+				<!--<li><a href="#">claritatem</a></li>-->
+				<!--<li><a href="#">sollemnes </a></li>-->
+				<!--<li><a href="#">Claritas</a></li>-->
+				<!--<li><a href="#">Mirum est</a></li>-->
+			<!--</ul>-->
+		  <!--</div>-->
+		  <!--<div class="footer-grid last_grid">-->
+			<!--<h4>Follow Us</h4>-->
+			<!--<ul class="footer_social wow fadeInLeft" data-wow-delay="0.4s">-->
+			  <!--<li><a href=""> <i class="fb"> </i> </a></li>-->
+			  <!--<li><a href=""><i class="tw"> </i> </a></li>-->
+			  <!--<li><a href=""><i class="google"> </i> </a></li>-->
+			  <!--<li><a href=""><i class="u_tube"> </i> </a></li>-->
+		 	<!--</ul>-->
+		 	<!--<div class="copy wow fadeInRight" data-wow-delay="0.4s">-->
+              <!--<p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://www.freemoban.com/">免费网站模板</a></p>-->
+	        <!--</div>-->
+		  <!--</div>-->
+		  <!--<div class="clearfix"> </div>-->
+	   <!--</div>-->
+      <!--</div>-->
+   <!--</div>-->
+
+</body>
+</html>		
